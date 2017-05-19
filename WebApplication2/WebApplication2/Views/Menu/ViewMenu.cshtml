@@ -1,0 +1,162 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我的主页</title>
+    <link rel="stylesheet" href="~/Content/StyleA.css" type="text/css" />
+</head>
+
+<body style="background-image:url(/image/139-150515124115.jpg);background-repeat:repeat-y">
+    <div class="top">
+        <div id="nav">
+            <ul>
+                <li id="liA" class="login">
+                    <a href=@ViewBag.ScanHref>@ViewBag.Scan</a>
+
+                </li>
+                <li id="liA" class="login1">
+                    |
+                </li>
+                <li id="liA" class="login">
+                    <a href=@ViewBag.UserNameHref>@ViewBag.UserName</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menutop">
+            <div class="blogTitle">
+                <h1 id="blogname" class="blogtitle">
+                    <a href=@ViewBag.UserNameHref>
+                        <span id="blognamespan">@ViewBag.UserBokeName</span>
+                    </a>
+                </h1>
+                <div>
+                    <a class="httpurl" href=@ViewBag.UserNameHref>
+                        @ViewBag.UserNameHref
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="blognav" id="blognav">
+                <div id="blognavBg" class="blognavBg">
+                </div>
+                <div class="blognavInfo">
+                    <span><a class="on" href="http://localhost:2090/Menu/ViewMenu">首页</a></span>
+                    <span><a class="on" href="http://localhost:2090/Directory/DirectoryView">博文目录</a></span>
+                    <span><a class="on" href="http://localhost:2090/Picture/ViewPicture">图片</a></span>
+                    <span><a class="on" href="http://localhost:2090/Upload/ViewUpload">上传文章</a></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="content">
+        <div class="left" style="float:left">
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">个人资料</a>
+                <img class="userimg" src="~/image/p91020801.png" width="155" />
+                <div style="margin-top:5px;text-align:center">
+                    <a class="ausername" >@ViewBag.UserName</a>
+                </div>
+
+                <div style="margin-top:5px">
+                    <a style="color:#999">博客等级:</a>
+                    <a>@ViewBag.Level</a>
+                </div>
+
+                <div style="margin-top:5px">
+                    <a style="color:#999">博客积分:</a>
+                    <a>@ViewBag.Point</a>
+                </div>
+
+                <div style="margin-top:5px">
+                    <a style="color:#999">博客访问:</a>
+                    <a>@ViewBag.Visit</a>
+                </div>
+                <div style="margin-top:5px">
+                    <a style="color:#999">收获点赞:</a>
+                    <a>@ViewBag.Like</a>
+                </div>
+            </div>
+
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">访客</a>
+                <div style="margin-top:5px; text-align:center;">
+                    <a style="color:#999">暂无访客</a>
+                </div>
+            </div>
+
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">好友</a>
+
+                <div style="margin-top:5px; text-align:center;">
+                    <a style="color:#999">暂无好友</a>
+
+                </div>
+            </div>
+
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">评论</a>
+                <div style="margin-top:5px; text-align:center; ">
+                    <a style="color:#999">暂无评论</a>
+
+                </div>
+            </div>
+
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">留言</a>
+                <div style="margin-top:5px; text-align:center;">
+                    <a style="color:#999">暂无留言</a>
+
+                </div>
+            </div>
+
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">分类</a>
+                <div style="margin-top:5px; text-align:center;">
+                    <a style="color:#999">暂无分类</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right" style="float:right">
+
+            <div class="usermenu">
+                <a class="a1" style="padding-left:8px;">全部博文</a>
+            </div>
+       
+            @for (int i = 0; i < @ViewBag.ArtCount; i++)
+            {
+                <div id="list">
+                    <div id="nn">
+                        <div id="ATitle">
+                            <span class="AtrTitle">@ViewData["Title"+i]</span>
+                        </div>
+                        <a style="font-size:20px;">@ViewData["Art"+i]</a>
+                        <div id="New">
+                            <a href=@ViewData["Href"+i] class="read">阅读(@ViewData["Count" + i])</a>
+                            <a href=@ViewData["Href"+i] class="read">评论(0)</a>
+                            <a href=@ViewData["Href"+i] class="read">查看全文>></a>
+                        </div>
+                    </div>
+                </div>
+            }
+                
+            
+            
+        </div>
+
+    </div>
+</body>
+</html>
+

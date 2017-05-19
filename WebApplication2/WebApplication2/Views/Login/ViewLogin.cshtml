@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+    //keleyi.com
+}
+@model IEnumerable<WebApplication2.Models.Movie>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录</title>
+    <link href="~/Content/StyleLogin.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body background="~/image/005.jpg">
+   
+    <div id="nav">
+        <div class="title">
+            <h1 class="login">登 录</h1>
+        </div>
+        <div class="content">
+            <div class="ed1">
+                <input type="text" name="name" placeholder="用户名" class="input1" id="input1" />
+            </div>
+            <div class="ed2">
+                <input type="password" name="password" placeholder="密码" class="input1" id="input2"  />
+            </div>
+
+          
+                <div class="divbutton">
+                    <Button type="button" class="login1" id="btnLogin">
+
+                        <span>
+                            <strong>登陆</strong>
+                        </span>
+                        <script src="~/Scripts/jquery-1.10.2.min.js">var a</script>
+                        <script type="text/javascript">
+                          
+                            $("#btnLogin").get(0).onclick = function () {
+                                a = $("#input1").val();
+                                var b = $("#input2").val();
+                                var c="http://localhost:2090/Login/Check";
+                                var d = c + "?name=" + a+"&"+"password="+b;
+                                window.location.href = d;
+                            };
+                        </script>
+                    </Button>
+
+                    <button type="button" class="scan" id="btnScan">
+                        <span>
+                            <strong>注册</strong>
+                        </span>
+                        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+                        <script type="text/javascript">
+                            $("#btnScan").get(0).onclick = function () {
+                                window.location.href = "http://localhost:2090/Scan/ViewScan";
+                            };
+                        </script>
+                    </button>
+                </div>
+     
+        </div>
+    </div>
+
+</body>
+</html>

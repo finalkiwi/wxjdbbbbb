@@ -1,0 +1,165 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body,div,ul,li{
+	margin:0px;
+	padding:0px;
+}
+.top{
+	background-color:#FFF;
+	width:auto;
+	height:30px;
+}
+
+#nav{
+	position:relative;
+	overflow: hidden;
+}
+#nava{
+	position:relative;
+	overflow: hidden;
+	background-color:#FFF;
+}
+#liA{
+	list-style:none;
+	float:right;
+	width:100px;
+	margin-right:5px;
+	line-height:30px;
+	text-align:center;
+	
+}
+
+.login{
+	background-color:#FFF;
+	overflow:hidden;
+	height:30px;
+	
+}
+
+.login1{
+	background-color:#FFF;
+	overflow:hidden;
+	width:10px;
+	height:30px;
+}
+.login:hover{
+	background-color:#F00;
+	overflow:hidden;
+	height:30px;
+	width:100px;
+}
+
+
+
+
+
+.right{
+	width:auto;
+	height:100%;
+	background-color:#FFF;
+	border:1px solid #CCC;
+	margin-top:100px;
+	
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ 	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	padding-bottom:100px;
+	margin-left:200px;
+	margin-right:200px;
+}
+.usermenu{
+	width:100%;
+	height:auto;
+	padding:3px;
+
+}
+
+#Title{
+	margin-left:20px;
+	width:auto;
+	height:auto;
+	margin-top:20px;
+}
+
+#content{
+	margin-left:20px;
+	width:auto;
+	height:auto;
+	margin-top:20px;
+}
+
+#contentInput{
+	margin-left:20px;
+	width:auto;
+	height:auto;
+	margin-top:15px;
+}
+
+.Intext{
+	width:90%;
+	margin-left:50px;
+	height:500px;
+}
+
+.divbutton
+{
+	width:auto;
+	height:auto;
+	margin-left:38%;
+	margin-right:38%;
+	margin-top:30px;
+	position:relative;
+	
+}
+
+.loginA{
+	width:47%;
+	height:40px;
+	float:left;
+	margin-right:3%;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#00eda4;
+	border:1px solid #CCC;
+}
+
+.scan{
+	width:47%;
+	height:40px;	
+	margin-left:3%;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#00a0fa;
+	border:1px solid #CCC;
+}
+
+.loginA:hover{
+	width:47%;
+	height:40px;
+	float:left;
+	margin-right:3%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#F00;
+	border:1px solid #CCC;
+}
+
+.scan:hover{
+	width:47%;
+	height:40px;	
+	margin-left:3%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color:#F00;
+	border:1px solid #CCC;
+}

@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>发布博文</title>
+    <link rel="stylesheet" href="~/Content/StyleUp.css" type="text/css" />
+</head>
+
+<body style="background-image:url(/image/139-150515124115.jpg);background-repeat:repeat-y">
+    <div class="top">
+        <div id="nav">
+            <ul>
+                <li id="liA" class="login">
+                    <a href=@ViewBag.ScanHref>@ViewBag.Scan</a>
+
+                </li>
+                <li id="liA" class="login1">
+                    |
+                </li>
+                <li id="liA" class="login">
+                    <a href=@ViewBag.UserNameHref>@ViewBag.UserName</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+
+        <div class="usermenu">
+            <a class="a1" style="padding-left:8px;">发博文</a>
+        </div>
+        <div id="Title">
+            <a>标题:</a>
+            <input type="text" id="input1"  name="input1" style="margin-left:16px;width:200px;"/>
+        </div>
+
+        <div id="content">
+            <a>内容:</a>
+
+        </div>
+        <div id="contentInput">
+            <textarea class="Intext" name="input2" id="input2"></textarea>
+        </div>
+
+        <div class="divbutton">
+            <button type="button" class="loginA" id="btnLogin">
+                <span>
+                    <strong>上传</strong>
+                </span>
+                <script src="~/Scripts/jquery-1.10.2.min.js">var a</script>
+                <script type="text/javascript">
+
+                            $("#btnLogin").get(0).onclick = function () {
+                                var a = $("#input1").val();
+                                var b = $("#input2").val();
+                                var c = "http://localhost:2090/Upload/AddArt";
+                                var d = c + "?title=" + a+"&"+"content="+b;
+                              
+                                window.location.href = d;
+                            };
+                </script>
+            </button>
+
+            <button type="button" class="scan"  id="btnScan">
+                <span>
+                    <strong>取消</strong>
+                </span>
+                <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+                <script type="text/javascript">
+                            $("#btnScan").get(0).onclick = function () {
+                                alert("是否取消");window.location.href="http://localhost:2090/Menu/ViewMenu";
+                            };
+                </script>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body,div,ul,li{
+	margin:0px;
+	padding:0px;
+}
+.top{
+	background-color:#FFF;
+	width:auto;
+	height:30px;
+}
+
+#nav{
+	position:relative;
+	overflow: hidden;
+}
+#nava{
+	position:relative;
+	overflow: hidden;
+	background-color:#FFF;
+}
+#liA{
+	list-style:none;
+	float:right;
+	width:100px;
+
+	line-height:30px;
+	text-align:center;
+	
+}
+
+.login{
+	background-color:#FFF;
+	overflow:hidden;
+	height:30px;
+	
+}
+
+.login1{
+	background-color:#FFF;
+	overflow:hidden;
+	width:10px;
+	height:30px;
+}
+.login:hover{
+	background-color:#F00;
+	overflow:hidden;
+	height:30px;
+	width:100px;
+}
+
+.menu{
+	width:auto;
+	height:100%;
+	margin-left:200px;
+	margin-right:200px;
+}
+.menutop{
+	position: absolute;
+	width:100%;
+	height: 250px;
+	left: 182px;
+	top: 31px;
+}
+.blogTitle{
+	top:35%;
+	left:120px;
+	width:auto;
+	position:relative;
+}
+.blogtitle{
+	font-family: "微软雅黑","黑体";
+    font-size: 24px;
+    color:#FFF;
+    font-weight: 300;
+}
+#blognamespan{
+	color:#FFF;
+}
+.httpurl{
+	color:#FFF;
+}
+
+.blognav {
+    position: absolute;
+	margin-top:120px;
+    width: 370px;
+	margin-left:120px;
+    height: 38px;
+}
+
+.blognavInfo {
+    position: absolute;
+    top: 11px;
+    height: 16px;
+	color:#FFF;
+}
+
+.sinabloghead .blognav span {
+    float: left;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 0 9px;
+    background-repeat: no-repeat;
+    background-position: right -240px;
+}
+.on{
+	color:#FFF;
+	margin-right:6px;
+}
+
+.left{
+	width:15%;
+	position: absolute;
+	height: 100%;
+	position:relative;
+	
+}
+
+.userinfo{
+	width:100%;
+	height:auto;
+	background-color:#FFF;
+	border:1px solid #CCC;
+	padding:3px;
+	margin-bottom:15px;
+	border:2px solid #666;
+	position:relative;
+	padding-bottom:10px;
+	 border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+.a1{
+	font-size:20px;
+	color:#06F;
+	font-family: "微软雅黑","黑体";
+}
+
+.right{
+	width:80%;
+	height:100%;
+	background-color:#FFF;
+	border:1px solid #CCC;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ 	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	padding-bottom:100px;
+
+}
+.usermenu{
+	width:100%;
+	height:auto;
+
+	padding:3px;
+
+}
+#content{
+	width:auto;
+	height:auto;
+	margin-top:300px;
+	margin-left:200px;
+	margin-right:200px;
+}
+
+.userimg{
+	
+	border:1px solid #999;
+	margin-left:11px;
+	margin-top:8px;
+}
+.ausername{
+	font-family: "微软雅黑","黑体";
+	padding-top:5px;
+	
+}
+
+#navv{
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	left: 0px;
+	top: 16px;
+	text-align:left;
+}
+.allBo{
+	background-color:#FFF;
+	height:30px;
+	width:auto;
+	height:auto;
+}
+
+.AllBowen:hover{
+	color:#000;
+	margin-left:20px;
+}
+.AllBowen{
+	color:#999;
+	margin-left:20px;
+}
+
+#list{
+	width:auto;
+	height:auto;
+	text-align:left;
+	margin-left:30px;
+	margin-top:20px;
+	float:left;
+	list-style:none;
+	font-size:20px;
+}
+
+.Message{
+	margin-bottom:8px;
+	list-style-type:none;
+}
+.Message:hover{
+	margin-bottom:8px;
+	color:#06F;
+	font-size:22px;
+	
+}
+.img{
+	width:98%;
+	height:auto;
+	
+}

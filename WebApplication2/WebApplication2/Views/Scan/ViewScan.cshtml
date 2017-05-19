@@ -1,0 +1,87 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>注册</title>
+    <link rel="stylesheet" href="~/Content/styleScan.css" type="text/css" />
+</head>
+
+<body background="~/image/005.jpg">
+    <div id="nav">
+        <div class="title">
+            <h1 class="login">注 册</h1>
+        </div>
+        <div class="content">
+            <div class="ed1">
+                <input type="text" name="name" placeholder="用户名" class="input1" id="input1" />
+            </div>
+            <div class="ed2">
+                <input type="tel" name="name" placeholder="手机号码" class="input1" id="input2"  />
+            </div>
+            <div class="ed2">
+                <input type="password" name="name" placeholder="设置密码" class="input1" id="input3"  />
+            </div>
+            <div class="ed2">
+                <input type="password" name="name" placeholder="确认密码" class="input1" id="input4"  />
+            </div>
+
+            <div class="divbutton">
+                <button type="button" class="login1" id="btnScan">
+                    <span>
+                        <strong>注册</strong>
+                    </span>
+                    <script src="~/Scripts/jquery-1.10.2.min.js">var a</script>
+                    <script type="text/javascript">
+
+                        $("#btnScan").get(0).onclick = function () {
+                            var a = $("#input1").val();
+                            var b = $("#input2").val().trim();
+                            var c = $("#input3").val();
+                            var d = $("#input4").val();
+                            var e = "http://localhost:2090/Scan/Scan";
+                            if (a.length==0 || b.length==0 || c.length==0 ||d.length==0) {
+                                alert("输入不能为空!");
+                            } else {
+                                if (b.length == 11) {
+                                    if (c == d) {
+                                        var f = e + "?UserName=" + a + "&Tel=" + b + "&PassWord=" + d;
+                                        window.location.href = f;
+                                    } else {
+                                        alert("请输入相同的密码!");
+                                    }
+                                } else {
+                                    alert("请输入正确的手机号码!");
+                                }
+                            }
+                           
+                        };
+                    </script>
+                </button>
+
+                <button type="button" class="scan" id="btnReturn">
+                    <span>
+                        <strong>取消</strong>
+                    </span>
+
+                    <script src="~/Scripts/jquery-1.10.2.min.js">var a</script>
+                    <script type="text/javascript">
+
+                        $("#btnReturn").get(0).onclick = function () {
+                            window.location.href = "http://localhost:2090/Login/ViewLogin";;
+                        };
+                    </script>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<body>
+</body>
+</html>

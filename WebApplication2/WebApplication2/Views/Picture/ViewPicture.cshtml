@@ -1,0 +1,101 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我的图片</title>
+    <link rel="stylesheet" href="~/Content/StylePicture.css" type="text/css" />
+</head>
+
+<body style="background-image:url(/image/139-150515124115.jpg);background-repeat:repeat-y">
+    <div class="top">
+        <div id="nav">
+            <ul>
+                <li id="liA" class="login">
+                    <a href=@ViewBag.ScanHref>@ViewBag.Scan</a>
+
+                </li>
+                <li id="liA" class="login1">
+                    |
+                </li>
+                <li id="liA" class="login">
+                    <a href=@ViewBag.UserNameHref>@ViewBag.UserName</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menutop">
+            <div class="blogTitle">
+                <h1 id="blogname" class="blogtitle">
+                    <a href=@ViewBag.UserNameHref>
+                        <span id="blognamespan">@ViewBag.UserBokeName</span>
+                    </a>
+                </h1>
+                <div>
+                    <a class="httpurl" href=@ViewBag.UserNameHref>
+                        @ViewBag.UserNameHref
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="blognav" id="blognav">
+                <div id="blognavBg" class="blognavBg">
+                </div>
+                <div class="blognavInfo">
+                    <span><a class="on" href="http://localhost:2090/Menu/ViewMenu">首页</a></span>
+                    <span><a class="on" href="http://localhost:2090/Directory/DirectoryView">博文目录</a></span>
+                    <span><a class="on" href="http://localhost:2090/Picture/ViewPicture">图片</a></span>
+                    <span><a class="on" href="http://localhost:2090/Upload/ViewUpload">上传文章</a></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="content">
+        <div class="left" style="float:left">
+            <div class="userinfo">
+                <a class="a1" style="padding-left:5px;">图片</a>
+                <div style="margin-top:5px; text-align:left;">
+                    <ul>
+                        <li class="AllBowen">全部图片</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="right" style="float:right">
+
+            <div class="usermenu">
+                <a class="a1" style="padding-left:8px;">全部图片</a>
+            </div>
+            <div id="list">
+                <ul>
+                    <li class="Message">
+                        <img src="~/image/85f5299b6865236a1d9d5a5dc849119d.jpg" class="img" />
+                    </li>
+                    <li class="Message">
+                        <img src="~/image/85f5299b6865236a1d9d5a5dc849119d.jpg"  class="img" />
+                    </li>
+                    <li class="Message">
+                        <img src="~/image/85f5299b6865236a1d9d5a5dc849119d.jpg"  class="img" />
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>
